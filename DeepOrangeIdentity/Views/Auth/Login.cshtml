@@ -1,0 +1,199 @@
+﻿@model LoginViewModel
+<head>
+
+</head>
+
+<div class="form-raw">
+    <div class="form-container">
+        <form asp-controller="Auth" asp-action="Login" method="post">
+            <input type="hidden" asp-for="ReturnUrl" />
+            <div class="form-header">
+                <h2>Login</h2>
+            </div>
+            <div class="input-raw">
+                <label class="input-title">Ім'я</label>
+                <input class="form-input" asp-for="UserName" />
+            </div>
+            <div class="input-raw">
+                <label class="input-title">Пароль</label>
+                <input class="form-input" asp-for="Password" />
+            </div>
+            <p class="form-trouble-text">Проблеми із входом?</p>
+            <div>
+                <button class="form-submit-button" type="submit">Увійти</button>
+            </div>
+        </form>
+        <div class="sign-in-another-raw">
+            <p class="form-text">- Або увійти через -</p>
+            <div class="sign-in-another-button-container">
+                <button class="sign-in-another-button">Google</button>
+                <button class="sign-in-another-button">LinkedIn</button>
+                <button class="sign-in-another-button">Facebook</button>
+            </div>
+        </div>
+        <div class="form-footer">
+            <p class="form-text">Не маєш аккаунт? <a asp-controller="Auth" asp-action="Register" asp-route-returnurl="@Model.ReturnUrl">Зареєструйся зараз</a></p>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    form {
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    input, select, button {
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        overflow: visible;
+        background: transparent;
+        /* inherit font & color from ancestor */
+        color: inherit;
+        font: inherit;
+        /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+        line-height: normal;
+        /* Corrects font smoothing for webkit */
+        -webkit-font-smoothing: inherit;
+        -moz-osx-font-smoothing: inherit;
+        /* Corrects inability to style clickable `input` types in iOS */
+        -webkit-appearance: none;
+
+        text-align: inherit;
+    }
+
+    /* Remove excess padding and border in Firefox 4+ */
+    input::-moz-focus-inner, select::-moz-focus-inner, button::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+
+    input:focus:not(:focus-visible), select:focus:not(:focus-visible), button:focus:not(:focus-visible) {
+        outline: none;
+    }
+
+    input:focus:not(:-moz-focusring), select:focus:not(:-moz-focusring), button:focus:not(:-moz-focusring) {
+        outline: none;
+    }
+
+    input:active, input:checked, input:focus {
+        outline: none;
+    }
+
+    button {
+        font-family: sans-serif;
+        font-size: 14px;
+    }
+
+    .form-raw {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-container {
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-header {
+        text-align: center;
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+
+    .form-header h2 {
+        margin: 20px 0;
+    }
+
+    .input-raw {
+        margin: 20px 0 0 0;
+    }
+
+    .input-title {
+        font-family: sans-serif;
+        font-size: 14px;
+    }
+
+    .form-input {
+        height: 40px;
+        width: 300px;
+        display: block;
+        padding-left: 10px;
+        font-size: 15px;
+        font-family: sans-serif;
+        border: 1px solid rgb(188 188 188);
+        border-radius: 5px;
+    }
+
+    .form-trouble-text {
+        font-size: 14px;
+        font-family: sans-serif;
+        margin: 15px 0 0 0;
+    }
+
+    .form-submit-button {
+        width: 100%;
+        height: 40px;
+        margin: 15px 0 0 0;
+        border: 1px solid black;
+        border-radius: 8px;
+        text-align: center;
+        transition: .3s;
+    }
+
+    .form-submit-button:hover {
+        color: white;
+        background: black;
+        cursor: pointer;
+    }
+
+    .form-text {
+        text-align: center;
+        margin: 20px 0;
+        font-family: sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .sign-in-another-button-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .sign-in-another-button {
+        width: 90px;
+        height: 40px;
+        text-align: center;
+        border: 1px solid rgb(188 188 188);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .form-footer {
+        text-align: center;
+    }
+
+    .form-footer p {
+        font-weight: normal;
+        font-size: 13px;
+    }
+
+    .form-footer p a {
+        font-weight: 600;
+    }
+</style>

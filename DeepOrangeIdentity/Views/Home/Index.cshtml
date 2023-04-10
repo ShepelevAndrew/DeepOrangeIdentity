@@ -1,0 +1,82 @@
+﻿<head>
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <ul>
+                <li><a asp-controller="auth" asp-action="login">Увійти</a></li>
+                <li><a asp-controller="auth" asp-action="register">Зареєструватись</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="logo">
+            <div class="logo-container">
+                <h1>DeepOrange</h1>
+                <h1>Identity</h1>
+            </div>
+        </div>
+    </header>
+</body>
+
+<style>
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+    nav {
+        position: absolute;
+        width: 100%;
+    }
+    .nav-container {
+        padding: 15px;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        grid-column-gap: 30px;
+    }
+    nav ul li {
+        font-size: 17px;
+        font-family: sans-serif;
+        color: white;
+        border-bottom: 1px solid transparent;
+        transition: .2s;
+    }
+
+    nav ul li:hover {
+        border-bottom: 1px solid white;
+        cursor: pointer;
+    }
+    .logo {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #232B2B;
+    }
+    .logo-container {
+        display: flex;
+        align-items: baseline;
+    }
+    .logo h1 {
+        font-size: 65px;
+        font-family: sans-serif;
+        color: white;
+    }
+    .logo h1:nth-child(2) {
+        font-size: 55px;
+        margin-left: 15px;
+    }
+</style>
