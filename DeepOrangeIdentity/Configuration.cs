@@ -18,10 +18,7 @@ public class Configuration
 
     public static IEnumerable<ApiResource> ApiResources =>
         new List<ApiResource>() {
-            new ApiResource("DeepOrangeApi", "DeepOrangeApi"/*, new[]
-                {
-                    JwtClaimTypes.Name
-                }*/)
+            new ApiResource("DeepOrangeApi", "DeepOrangeApi")
             {
                 Scopes = { "DeepOrangeApi" }
             }
@@ -54,6 +51,31 @@ public class Configuration
                     "DeepOrangeApi"
                 }
                 /*AllowAccessTokensViaBrowser = true*/
+            },
+            new Client
+            {
+                ClientId = "tg-web-app",
+                RequireClientSecret = false,
+                AllowedGrantTypes = GrantTypes.Code,
+                RequirePkce = false,
+                RedirectUris =
+                {
+                    "http://localhost:5013/callback.html"
+                },
+                PostLogoutRedirectUris =
+                {
+                    "http://127.0.0.1:5013/logout.html"
+                },
+                AllowedCorsOrigins =
+                {
+                    "http://localhost:5013"
+                },
+                AllowedScopes =
+                {
+                    IdentityServerConstants.StandardScopes.OpenId,
+                    IdentityServerConstants.StandardScopes.Profile,
+                    "DeepOrangeApi"
+                }
             }
         };
 }

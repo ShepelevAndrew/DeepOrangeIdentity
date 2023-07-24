@@ -26,9 +26,11 @@
         <div class="sign-in-another-raw">
             <p class="form-text">- Або увійти через -</p>
             <div class="sign-in-another-button-container">
-                <button class="sign-in-another-button">Google</button>
-                <button class="sign-in-another-button">LinkedIn</button>
-                <button class="sign-in-another-button">Facebook</button>
+                <form asp-controller="Auth" asp-action="ExternalLogin" asp-route-returnUrl = "@Model.ReturnUrl" method="post">
+                    @foreach(var provider in Model.ExternalProviders) {
+                        <button class="sign-in-another-button" type="submit" name="provider" value="@provider.Name">@provider.DisplayName</button>
+                    }
+                </form>
             </div>
         </div>
         <div class="form-footer">

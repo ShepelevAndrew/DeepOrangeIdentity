@@ -3,6 +3,9 @@ using DeepOrangeIdentity.ViewModel;
 using IdentityServer4.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.Web;
+using System;
 
 namespace DeepOrangeIdentity.Controllers
 {
@@ -21,14 +24,32 @@ namespace DeepOrangeIdentity.Controllers
         }
 
         [HttpGet]
-        public IActionResult Login(string returnurl)
+        public async Task<IActionResult> Login(string returnurl)
         {
+            var externalProviders = await _signInManager.GetExternalAuthenticationSchemesAsync();
+
             var viewModel = new LoginViewModel
             {
-                ReturnUrl = returnurl
+                ReturnUrl = returnurl,
+                ExternalProviders = externalProviders
             };
 
             return View(viewModel);
+        }
+
+        [HttpPost]
+        public IActionResult ExternalLogin(string provider, string returnUrl)
+        {
+            returnUrl = "http://localhost:5013" + returnUrl;
+            var uri = new Uri(returnUrl);
+
+            var redirectQuery = HttpUtility.ParseQueryString(uri.Query);
+
+            var redirectUri = redirectQuery.Get("redirect_uri");
+
+            var properties = _signInManager.ConfigureExternalAuthenticationProperties(provider, redirectUri);
+            
+            return Challenge(properties, provider);
         }
 
         [HttpPost]

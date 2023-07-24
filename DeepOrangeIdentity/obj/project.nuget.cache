@@ -1,14 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "FIkD/+BL20OBBXgsjntZbvi5cqeWTagYUjlLBDSfMgjRW55A+1vh6HMmeAV4F2B7stu9m4YoRNtc0jqOmy5jdg==",
+  "dgSpecHash": "u+ap8sdOKAHOc4farUYoM7eX1dhcBy5obUadn/dCVoke+tYXVRzmL/aOeOsq0VYTeZL6R3isOU+4Y0Wxw7hCrw==",
   "success": true,
-  "projectFilePath": "Q:\\GitHub\\DeepOrangeIdentity\\DeepOrangeIdentity\\DeepOrangeIdentity.csproj",
+  "projectFilePath": "Q:\\GitHub\\DeepOrange\\backend\\DeepOrangeIdentity\\DeepOrangeIdentity\\DeepOrangeIdentity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\computer\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\computer\\.nuget\\packages\\identitymodel\\4.4.0\\identitymodel.4.4.0.nupkg.sha512",
     "C:\\Users\\computer\\.nuget\\packages\\identityserver4\\4.1.2\\identityserver4.4.1.2.nupkg.sha512",
     "C:\\Users\\computer\\.nuget\\packages\\identityserver4.aspnetidentity\\4.1.2\\identityserver4.aspnetidentity.4.1.2.nupkg.sha512",
     "C:\\Users\\computer\\.nuget\\packages\\identityserver4.storage\\4.1.2\\identityserver4.storage.4.1.2.nupkg.sha512",
+    "C:\\Users\\computer\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\7.0.5\\microsoft.aspnetcore.authentication.google.7.0.5.nupkg.sha512",
     "C:\\Users\\computer\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\3.1.0\\microsoft.aspnetcore.authentication.openidconnect.3.1.0.nupkg.sha512",
     "C:\\Users\\computer\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.4\\microsoft.aspnetcore.cryptography.internal.7.0.4.nupkg.sha512",
     "C:\\Users\\computer\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.4\\microsoft.aspnetcore.cryptography.keyderivation.7.0.4.nupkg.sha512",

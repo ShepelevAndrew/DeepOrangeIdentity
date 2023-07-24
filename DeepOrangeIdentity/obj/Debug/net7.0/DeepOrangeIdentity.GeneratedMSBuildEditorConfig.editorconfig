@@ -9,25 +9,25 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DeepOrangeIdentity
 build_property.RootNamespace = DeepOrangeIdentity
-build_property.ProjectDir = Q:\GitHub\DeepOrangeIdentity\DeepOrangeIdentity\
+build_property.ProjectDir = q:\Git\DeepOrange\backend\DeepOrangeIdentity\DeepOrangeIdentity\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = Q:\GitHub\DeepOrangeIdentity\DeepOrangeIdentity
+build_property.MSBuildProjectDirectory = q:\Git\DeepOrange\backend\DeepOrangeIdentity\DeepOrangeIdentity
 build_property._RazorSourceGeneratorDebug = 
 
-[Q:/GitHub/DeepOrangeIdentity/DeepOrangeIdentity/Views/Auth/Login.cshtml]
+[q:/Git/DeepOrange/backend/DeepOrangeIdentity/DeepOrangeIdentity/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Q:/GitHub/DeepOrangeIdentity/DeepOrangeIdentity/Views/Auth/Register.cshtml]
+[q:/Git/DeepOrange/backend/DeepOrangeIdentity/DeepOrangeIdentity/Views/Auth/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Q:/GitHub/DeepOrangeIdentity/DeepOrangeIdentity/Views/Home/Index.cshtml]
+[q:/Git/DeepOrange/backend/DeepOrangeIdentity/DeepOrangeIdentity/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Q:/GitHub/DeepOrangeIdentity/DeepOrangeIdentity/Views/_ViewImports.cshtml]
+[q:/Git/DeepOrange/backend/DeepOrangeIdentity/DeepOrangeIdentity/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

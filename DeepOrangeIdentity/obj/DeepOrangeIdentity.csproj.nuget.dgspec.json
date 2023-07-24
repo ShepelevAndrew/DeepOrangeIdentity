@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "Q:\\GitHub\\DeepOrangeIdentity\\DeepOrangeIdentity\\DeepOrangeIdentity.csproj": {}
+    "Q:\\GitHub\\DeepOrange\\backend\\DeepOrangeIdentity\\DeepOrangeIdentity\\DeepOrangeIdentity.csproj": {}
   },
   "projects": {
-    "Q:\\GitHub\\DeepOrangeIdentity\\DeepOrangeIdentity\\DeepOrangeIdentity.csproj": {
+    "Q:\\GitHub\\DeepOrange\\backend\\DeepOrangeIdentity\\DeepOrangeIdentity\\DeepOrangeIdentity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Q:\\GitHub\\DeepOrangeIdentity\\DeepOrangeIdentity\\DeepOrangeIdentity.csproj",
+        "projectUniqueName": "Q:\\GitHub\\DeepOrange\\backend\\DeepOrangeIdentity\\DeepOrangeIdentity\\DeepOrangeIdentity.csproj",
         "projectName": "DeepOrangeIdentity",
-        "projectPath": "Q:\\GitHub\\DeepOrangeIdentity\\DeepOrangeIdentity\\DeepOrangeIdentity.csproj",
+        "projectPath": "Q:\\GitHub\\DeepOrange\\backend\\DeepOrangeIdentity\\DeepOrangeIdentity\\DeepOrangeIdentity.csproj",
         "packagesPath": "C:\\Users\\computer\\.nuget\\packages\\",
-        "outputPath": "Q:\\GitHub\\DeepOrangeIdentity\\DeepOrangeIdentity\\obj\\",
+        "outputPath": "Q:\\GitHub\\DeepOrange\\backend\\DeepOrangeIdentity\\DeepOrangeIdentity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,6 +52,10 @@
             "IdentityServer4.AspNetIdentity": {
               "target": "Package",
               "version": "[4.1.2, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Google": {
+              "target": "Package",
+              "version": "[7.0.5, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",

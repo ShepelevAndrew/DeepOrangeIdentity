@@ -90,6 +90,22 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Authentication.Google/7.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Authentication.OpenIdConnect/3.1.0": {
         "type": "package",
         "dependencies": {
@@ -799,6 +815,21 @@
         "lib/netstandard2.0/IdentityServer4.Storage.dll",
         "lib/netstandard2.0/IdentityServer4.Storage.pdb",
         "lib/netstandard2.0/IdentityServer4.Storage.xml"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.Google/7.0.5": {
+      "sha512": "W7GAE+Gor29canssOYuZzTHOPsPX1FjYLlOoqWRA9fw7Hk7JSBo9n682LngXokvICzWKzV0MIuUa+izLmk/VmA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.google/7.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.dll",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.xml",
+        "microsoft.aspnetcore.authentication.google.7.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.google.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication.OpenIdConnect/3.1.0": {
@@ -1807,6 +1838,7 @@
     "net7.0": [
       "IdentityServer4 >= 4.1.2",
       "IdentityServer4.AspNetIdentity >= 4.1.2",
+      "Microsoft.AspNetCore.Authentication.Google >= 7.0.5",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 7.0.4",
       "Microsoft.EntityFrameworkCore >= 7.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.4",
@@ -1821,11 +1853,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Q:\\GitHub\\DeepOrangeIdentity\\DeepOrangeIdentity\\DeepOrangeIdentity.csproj",
+      "projectUniqueName": "Q:\\GitHub\\DeepOrange\\backend\\DeepOrangeIdentity\\DeepOrangeIdentity\\DeepOrangeIdentity.csproj",
       "projectName": "DeepOrangeIdentity",
-      "projectPath": "Q:\\GitHub\\DeepOrangeIdentity\\DeepOrangeIdentity\\DeepOrangeIdentity.csproj",
+      "projectPath": "Q:\\GitHub\\DeepOrange\\backend\\DeepOrangeIdentity\\DeepOrangeIdentity\\DeepOrangeIdentity.csproj",
       "packagesPath": "C:\\Users\\computer\\.nuget\\packages\\",
-      "outputPath": "Q:\\GitHub\\DeepOrangeIdentity\\DeepOrangeIdentity\\obj\\",
+      "outputPath": "Q:\\GitHub\\DeepOrange\\backend\\DeepOrangeIdentity\\DeepOrangeIdentity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1866,6 +1898,10 @@
           "IdentityServer4.AspNetIdentity": {
             "target": "Package",
             "version": "[4.1.2, )"
+          },
+          "Microsoft.AspNetCore.Authentication.Google": {
+            "target": "Package",
+            "version": "[7.0.5, )"
           },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
